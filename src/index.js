@@ -301,7 +301,7 @@ class Image extends React.Component {
       Tag,
       itemProp,
       critical,
-      ...rest,
+      ...rest
     } = convertProps(this.props)
 
     let { loading } = convertProps(this.props)
