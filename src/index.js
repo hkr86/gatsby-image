@@ -474,7 +474,6 @@ class Image extends React.Component {
           }}
           ref={this.handleRef}
           key={`fluid-${JSON.stringify(image.srcSet)}`}
-          {...rest}
         >
           {/* Preserve the aspect ratio. */}
           <Tag
@@ -544,6 +543,7 @@ class Image extends React.Component {
                 itemProp={itemProp}
                 loading={loading}
                 draggable={draggable}
+                {...rest}
               />
             </picture>
           )}
@@ -589,7 +589,6 @@ class Image extends React.Component {
           style={divStyle}
           ref={this.handleRef}
           key={`fixed-${JSON.stringify(image.srcSet)}`}
-          {...rest}
         >
           {/* Show a solid background color. */}
           {bgColor && (
@@ -648,6 +647,7 @@ class Image extends React.Component {
                 itemProp={itemProp}
                 loading={loading}
                 draggable={draggable}
+                {...rest}
               />
             </picture>
           )}
