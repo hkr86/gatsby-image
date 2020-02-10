@@ -426,7 +426,7 @@ class Image extends React.Component {
       itemProp,
       loading,
       draggable,
-      ...rest,
+      ...rest
     } = convertProps(this.props)
 
     const shouldReveal = this.state.fadeIn === false || this.state.imgLoaded
